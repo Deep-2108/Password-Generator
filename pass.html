@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="pass.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="password_heading_div">
+            <p class="password_heading_para">PASSWORD GENERATOR</p>
+        </div>
+        <div class="password_output_div">
+            <div class="show_password">
+                <input type="password" readonly placeholder="password" id="password_placeholder">
+            </div>
+            <div class="password_copied"><p class="copied"></p>
+                <i class="fa-solid fa-copy" style="color: #edeff2;"></i></div>
+        </div>
+        <div class="main">
+        <div class="password_data_main">
+            <div class="password_length_div">
+                <div class="password_length_para">Password Length</div>
+                <div class="password_length_show">10</div>
+            </div>
+            <div class="password_slider">
+                <input type="range" min="1" max="20" step="1" class="password_slider_main">
+            </div>
+            <div class="uppercase">
+              <input type="checkbox" id="checkbox1" checked>
+                <label for="checkbox1" class="deep" >Include Uppercase Letters</label>
+            </div>
+            <div class="lowercase">
+                <input type="checkbox" id="checkbox1">
+                <label for="checkbox1" class="deep">Include Lowercase Letters</label>
+            </div>
+            <div class="numbers">
+                <input type="checkbox" id="checkbox1">
+                <label for="checkbox1" class="deep">Include Numbers</label>
+            </div>
+            <div class="symbols">
+                <input type="checkbox" id="checkbox1">
+                <label for="checkbox1" class="deep">Include Symbols</label>
+            </div>
+            <div class="strength">
+               <div class="strenthpara_div"><p class="strength_para">Strength</p></div> 
+                <div class="Strength_circle"></div>
+            </div>
+            <div class="Password_genreate_button" >
+                <button class="button" onclick="buttonA()">GENERATE PASSWORD</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+    <script src="pass.js"></script>
+</body>
+</html>
